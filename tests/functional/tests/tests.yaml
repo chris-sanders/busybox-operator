@@ -1,0 +1,12 @@
+tests:
+# - kubernetes_model:
+#   - zaza.charm_tests.noop.tests.NoopTestBionic
+ - zaza.charm_tests.noop.tests.NoopTest
+configure:
+# - kubernetes_model:
+#   - zaza.charm_tests.noop.setup.basic_setup_bionic
+ - zaza.charm_tests.noop.setup.basic_setup
+gate_bundles:
+    - kubernetes
+# smoke_bundles:
+#     - kubernetes-smoke

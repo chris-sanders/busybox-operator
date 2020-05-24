@@ -1,0 +1,20 @@
+containers:
+  - name: busybox
+    imageDetails:
+      imagePath: {{ image_path }}
+      username: {{ repo_username }}
+      password: {{ repo_password }}
+    ports:
+        - containerPort: 80
+          protocol: TCP
+    command:
+        - /bin/sh
+        - "-ec"
+        - sleep 3600
+# containers:
+#   - name: busybox-example
+#     image: busybox/latest
+#     imagePullPolicy: Always
+#     command:
+#     - sleep
+#     - 3600
